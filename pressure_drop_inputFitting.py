@@ -6,7 +6,7 @@ import time
 from openpyxl import Workbook
 from openpyxl.styles import Font
 wb=Workbook()
-filepath=r'C:\Users\chris\Documents\Python Projects\head loss\output\Pressure_Drop_Data.xlsx'
+filepath= 'Pressure_Drop_Data.xlsx'
 
 
 
