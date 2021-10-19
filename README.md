@@ -1,20 +1,20 @@
 # Pipe loss
 
-Pipeloss is a Python project for calculating theHead Loss in an HVAC piping system
-
+Head Pipe Loss is a Python project for calculating the pressure loss in an HVAC piping system.
+The total piping system is divided into multiple nodes, based on pipe's diameter change.
+Each node's/section's pipe loss is calculated based on the water flow rate and pipe and fittings' characteristics.
+Total Loss is calculated for both Supply and Return side.
+The script outputs the results in an Excel file in the same directory as the project's files.
 
 ## Installation
+In order to run the script, you need to install Pandas and openpyxl libraries.
+Put all the files in the same directory and run the script.
 
-
-```bash
-pip install pipeloss
-```
 
 ## Usage
+When you run the script, there are on-screen instructions on how the model works. In every step, you input the data (#nodes, flow rates, dimensions etc) for the calculations.
 
 
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+You are welcome to give me ideas on how to improve or make my code more versatile without compromising its initial purpose :)
