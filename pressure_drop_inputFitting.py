@@ -6,12 +6,12 @@ import time
 from openpyxl import Workbook
 from openpyxl.styles import Font
 wb=Workbook()
-filepath= 'Pressure_Drop_Data.xlsx'
+filepath= 'output/Pressure_Drop_Data.xlsx'
 
 
 
 #open piping data file
-pipe_reducers=pd.read_excel(r"C:\Users\chris\Documents\Python Projects\head loss\data\Piping Data.xlsx",sheet_name='Reducers')
+pipe_reducers=pd.read_excel("data\Piping Data.xlsx",sheet_name='Reducers')
 
 #convert data file to DataFrame
 df=pd.DataFrame(pipe_reducers)
@@ -144,7 +144,7 @@ class Format:
 
 #FUNCTIONS:
 
-#Hanzen-Williams 
+#Hanzen-Williams Equation
 def pipe_loss(pipe,flow_rate):
 
 	#losses per 100m pipe
