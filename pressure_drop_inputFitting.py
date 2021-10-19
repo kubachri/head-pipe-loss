@@ -6,12 +6,12 @@ import time
 from openpyxl import Workbook
 from openpyxl.styles import Font
 wb=Workbook()
-filepath= 'output/Pressure_Drop_Data.xlsx'
+filename= 'Pressure_Drop_Data.xlsx'
 
 
 
 #open piping data file
-pipe_reducers=pd.read_excel("data\Piping Data.xlsx",sheet_name='Reducers')
+pipe_reducers=pd.read_excel("Piping Data.xlsx",sheet_name='Reducers')
 
 #convert data file to DataFrame
 df=pd.DataFrame(pipe_reducers)
@@ -415,12 +415,11 @@ while calc==True:
 #Saving the Excel File
 while True:
 	try:
-		wb.save(filepath)
+		wb.save(filename)
 		break
 	except:
 		print("Couldn't save. The file is currently open. Please close it while the script is waiting.")
 		print('5 sec delay...\n')
 		time.sleep(5)
 print('\n')
-print('Excel File {} created succesfully !'.format([x for x in filepath.split("\\")][-1]))
-print(f'File Directory: {filepath}')
+print('Excel File {} created succesfully !'.format([x for x in filename.split("\\")][-1]))
