@@ -1,9 +1,10 @@
 # Head Pipe Loss
 
-Head Pipe Loss is a Python project for calculating the pressure loss in an HVAC piping system.
+Head Pipe Loss is a Python project for calculating the pressure loss in an HVAC PPR piping system.
 The total piping system is divided into multiple nodes, based on pipe's diameter change.
 Each node's/section's pipe loss is calculated based on the water flow rate and pipe and fittings' characteristics.
 Total Loss is calculated for both Supply and Return side.
+The characteristics of pipes and fittings are based on the Aquatherm PPR series, but can be modified for other manufacturers as well.
 The script outputs the results in an Excel file in the same directory as the project's files.
 
 ## Installation
