@@ -1,4 +1,4 @@
-# Pipe loss
+# Head Pipe Loss
 
 Head Pipe Loss is a Python project for calculating the pressure loss in an HVAC piping system.
 The total piping system is divided into multiple nodes, based on pipe's diameter change.
